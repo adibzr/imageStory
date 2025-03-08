@@ -1,4 +1,11 @@
+import StoriesContainer from "../component/StoriesContainer";
+
+
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <div>
+      <StoriesContainer />
+    </div>
+  );
 };
 export default Main;

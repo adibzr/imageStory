@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8F9FA" />
+  
+  <!-- Phone Frame -->
+  <rect x="250" y="50" width="300" height="500" rx="20" ry="20" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" />
+  
+  <!-- Status Bar -->
+  <rect x="250" y="50" width="300" height="30" rx="20" ry="20" fill="#FFFFFF" />
+  
+  <!-- App Header -->
+  <rect x="250" y="80" width="300" height="60" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" />
+  <text x="270" y="120" font-family="Arial" font-size="20" fill="#333333">App Name</text>
+  
+  <!-- Stories Bar -->
+  <rect x="250" y="140" width="300" height="100" fill="#FFFFFF" />
+  
+  <!-- Story Circles -->
+  <!-- Your Story (Add Button) -->
+  <circle cx="290" cy="190" r="30" fill="#F0F0F0" stroke="#E0E0E0" stroke-width="2" />
+  <line x1="290" y1="175" x2="290" y2="205" stroke="#3498DB" stroke-width="2" />
+  <line x1="275" y1="190" x2="305" y2="190" stroke="#3498DB" stroke-width="2" />
+  <text x="290" y="235" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Your Story</text>
+  
+  <!-- Story 1 (Unviewed) -->
+  <circle cx="360" cy="190" r="30" fill="#FFFFFF" stroke="#3498DB" stroke-width="2" />
+  <circle cx="360" cy="190" r="28" fill="#FFFFFF" />
+  <circle cx="360" cy="190" r="26" fill="#E0E0E0" />
+  <text x="360" y="235" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">User 1</text>
+  
+  <!-- Story 2 (Unviewed) -->
+  <circle cx="430" cy="190" r="30" fill="#FFFFFF" stroke="#3498DB" stroke-width="2" />
+  <circle cx="430" cy="190" r="28" fill="#FFFFFF" />
+  <circle cx="430" cy="190" r="26" fill="#E0E0E0" />
+  <text x="430" y="235" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">User 2</text>
+  
+  <!-- Story 3 (Viewed) -->
+  <circle cx="500" cy="190" r="30" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" />
+  <circle cx="500" cy="190" r="28" fill="#FFFFFF" />
+  <circle cx="500" cy="190" r="26" fill="#E0E0E0" />
+  <text x="500" y="235" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">User 3</text>
+  
+  <!-- Divider -->
+  <line x1="250" y1="250" x2="550" y2="250" stroke="#E0E0E0" stroke-width="1" />
+  
+  <!-- Main Content Area -->
+  <rect x="250" y="250" width="300" height="300" fill="#FFFFFF" />
+  <text x="400" y="400" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Main App Content</text>
+  
+  <!-- Story Viewer Mockup (Side View) -->
+  <rect x="600" y="50" width="150" height="500" rx="20" ry="20" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" />
+  
+  <!-- Story Viewer Header -->
+  <rect x="600" y="50" width="150" height="30" rx="20" ry="20" fill="#333333" />
+  
+  <!-- Progress Bar -->
+  <rect x="610" y="70" width="130" height="4" rx="2" ry="2" fill="#E0E0E0" />
+  <rect x="610" y="70" width="50" height="4" rx="2" ry="2" fill="#3498DB" />
+  
+  <!-- Story Content -->
+  <rect x="600" y="80" width="150" height="470" fill="#F0F0F0" />
+  <text x="675" y="250" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Story</text>
+  <text x="675" y="270" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Content</text>
+  
+  <!-- Navigation Elements -->
+  <rect x="600" y="80" width="30" height="470" fill="transparent" />
+  <rect x="720" y="80" width="30" height="470" fill="transparent" />
+  
+  <!-- Left/Right Arrows -->
+  <polygon points="615,300 635,280 635,320" fill="rgba(255,255,255,0.5)" />
+  <polygon points="735,300 715,280 715,320" fill="rgba(255,255,255,0.5)" />
+  
+  <!-- Close Button -->
+  <circle cx="730" cy="90" r="10" fill="rgba(0,0,0,0.3)" />
+  <line x1="725" y1="85" x2="735" y2="95" stroke="#FFFFFF" stroke-width="2" />
+  <line x1="735" y1="85" x2="725" y2="95" stroke="#FFFFFF" stroke-width="2" />
+  
+  <!-- Legend -->
+  <text x="50" y="100" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Stories Feature Design</text>
+  
+  <circle cx="60" cy="140" r="8" fill="#FFFFFF" stroke="#3498DB" stroke-width="2" />
+  <text x="80" y="145" font-family="Arial" font-size="14" fill="#333333">Unviewed Story</text>
+  
+  <circle cx="60" cy="170" r="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" />
+  <text x="80" y="175" font-family="Arial" font-size="14" fill="#333333">Viewed Story</text>
+  
+  <circle cx="60" cy="200" r="8" fill="#F0F0F0" stroke="#E0E0E0" stroke-width="2" />
+  <rect x="56" y="196" width="8" height="8" fill="#F0F0F0" stroke="#E0E0E0" stroke-width="0" />
+  <line x1="60" y1="195" x2="60" y2="205" stroke="#3498DB" stroke-width="1.5" />
+  <line x1="55" y1="200" x2="65" y2="200" stroke="#3498DB" stroke-width="1.5" />
+  <text x="80" y="205" font-family="Arial" font-size="14" fill="#333333">Add Story Button</text>
+  
+  <rect x="52" y="225" width="16" height="4" rx="2" ry="2" fill="#3498DB" />
+  <text x="80" y="230" font-family="Arial" font-size="14" fill="#333333">Progress Indicator</text>
+  
+  <text x="50" y="270" font-family="Arial" font-size="14" fill="#333333">Left: Home Screen</text>
+  <text x="50" y="290" font-family="Arial" font-size="14" fill="#333333">Right: Story Viewer</text>
+  
+  <text x="50" y="330" font-family="Arial" font-size="14" fill="#333333">Color Scheme:</text>
+  <rect x="50" y="340" width="20" height="20" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" />
+  <text x="80" y="355" font-family="Arial" font-size="14" fill="#333333">Background (#FFFFFF)</text>
+  
+  <rect x="50" y="370" width="20" height="20" fill="#3498DB" />
+  <text x="80" y="385" font-family="Arial" font-size="14" fill="#333333">Primary (#3498DB)</text>
+  
+  <rect x="50" y="400" width="20" height="20" fill="#E0E0E0" />
+  <text x="80" y="415" font-family="Arial" font-size="14" fill="#333333">Secondary (#E0E0E0)</text>
+  
+  <rect x="50" y="430" width="20" height="20" fill="#333333" />
+  <text x="80" y="445" font-family="Arial" font-size="14" fill="#333333">Text (#333333)</text>
+</svg>

@@ -1,0 +1,16 @@
+.addStoryContainer {
+  margin: 0.5rem;
+}
+
+.addStoryButton {
+  color: var(--secondary-inactive-color);
+  font-size: var(--font-size-4xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg {
+  path:first-of-type {
+    fill: var(--primary-accent-color);
+  }
+}

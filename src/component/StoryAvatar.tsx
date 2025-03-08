@@ -10,7 +10,11 @@ interface StoryAvatarProps {
 }
 
 const StoryAvatar = ({ story, onClick }: StoryAvatarProps) => {
-  return <div onClick={() => onClick(story.id)}>img</div>;
+  return (
+    <div onClick={() => null}>
+      <img src={story.image} alt="" />
+    </div>
+  );
 };
 
 export default StoryAvatar;
