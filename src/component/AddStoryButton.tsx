@@ -7,7 +7,11 @@ import styles from "../styles/AddStoryButton.module.css";
 import useStorageManager from "../hooks/useStorageManager";
 import useImageProcessor from "../hooks/useImageProcessor";
 
-const AddStoryButton = () => {
+interface AddStoryButtonProps {
+  onStoryAdded?: () => void;
+}
+
+const AddStoryButton = ({ onStoryAdded }: AddStoryButtonProps) => {
   const { processImage } = useImageProcessor();
   const { saveStory } = useStorageManager();
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -18,6 +22,9 @@ const AddStoryButton = () => {
     if (file) {
       processImage(file).then((image) => {
         saveStory({ image, timestamp: Date.now() });
+        if (onStoryAdded) {
+          onStoryAdded();
+        }
       });
     }
   };

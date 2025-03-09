@@ -3,6 +3,7 @@
 // Indicates viewed/unviewed status with different border colors
 
 import { StoryData } from "../hooks/useStorageManager";
+import style from "../styles/StoryAvatar.module.css";
 
 interface StoryAvatarProps {
   story: StoryData;
@@ -10,8 +11,13 @@ interface StoryAvatarProps {
 }
 
 const StoryAvatar = ({ story, onClick }: StoryAvatarProps) => {
+
+  const handleAvatarClick = () => {
+    onClick(story.id);
+  }
+
   return (
-    <div onClick={() => null}>
+    <div onClick={handleAvatarClick} className={style.storyAvatarContainer}>
       <img src={story.image} alt="" />
     </div>
   );

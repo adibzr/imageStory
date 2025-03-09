@@ -2,27 +2,13 @@
 // Handles navigation between stories
 
 import { StoryData } from "../hooks/useStorageManager";
+import styles from "../styles/StoryViewer.module.css";
 
-interface StoryViewerProps {
-  stories: StoryData[];
-  initialStoryId?: string;
-  onClose: () => void;
-}
-
-const StoryViewer = ({
-  stories,
-  initialStoryId,
-  onClose,
-}: StoryViewerProps) => {
+const StoryViewer = ({ story }: { story: StoryData }) => {
   return (
-    <div>
-      <button onClick={onClose}>Close</button>
-      <div>Initial Story ID: {initialStoryId}</div>
-      <ul>
-        {stories.map((story) => (
-          <li key={story.id}>{story.id}</li>
-        ))}
-      </ul>
+    <div className={styles.storyViewer}>
+      <div>Initial Story ID: {story.id}</div>
+      <img src={story.image} alt={`Image: ${story.id}`} />
     </div>
   );
 };
